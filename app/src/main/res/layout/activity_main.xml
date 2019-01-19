@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+       <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="sans-serif-light"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"/>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:hint="Password"
+                android:fontFamily="sans-serif-light"
+                android:textColorHint="@color/gray"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/gray"
+                android:drawableLeft="@drawable/email"/>
+       </LinearLayout>
+
+    <com.ekalips.fancybuttonproj.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/sign_in"
+        app:btnStyle="stroke_fill"
+        app:fillColor="@null"
+        app:hideFillAfterCollapse="false"
+        app:progressColor="@color/white1"
+        app:textColor="@color/white1"
+        app:capsText="false"
+        android:background="@drawable/oval"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="45dp"
+        app:text="Sign In"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_below="@id/sign_in">
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Don't have account? Sign up"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white1"
+            android:textSize="19sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

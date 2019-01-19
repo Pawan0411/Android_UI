@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/gray"
+            android:textSize="15sp"
+            android:textColorHint="@color/gray"
+            android:hint="Email"
+            android:drawableLeft="@drawable/email"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textColorHint="@color/gray"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:backgroundTint="@color/gray"
+            android:drawableLeft="@drawable/email"/>
+    </LinearLayout>
+
+
+
+
+    <com.ekalips.fancybuttonproj.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/sign_in"
+        app:btnStyle="stroke_fill"
+        app:hideFillAfterCollapse="false"
+        app:progressColor="@color/white1"
+        app:strokeColor="@color/white1"
+        app:textColor="@color/white1"
+        app:fillColor="@color/colorAccent"
+        android:radius="50dp"
+        app:capsText="false"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="45dp"
+        app:text="Sign Up"
+        />
+
+</RelativeLayout>
