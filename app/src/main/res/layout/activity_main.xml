@@ -24,9 +24,7 @@
                 android:textColor="@color/gray"
                 android:backgroundTint="@color/gray"
                 android:fontFamily="sans-serif-light"
-                android:textColorHint="@color/gray"
                 android:textSize="15sp"
-                android:hint="Email"
                 android:drawableLeft="@drawable/email"/>
 
             <EditText
@@ -35,12 +33,11 @@
                 android:layout_height="match_parent"
                 android:textColor="@color/gray"
                 android:textSize="15sp"
-                android:hint="Password"
                 android:fontFamily="sans-serif-light"
                 android:textColorHint="@color/gray"
                 android:inputType="textPassword"
-                android:backgroundTint="@color/gray"
-                android:drawableLeft="@drawable/email"/>
+                android:drawableLeft="@drawable/password" />
+
        </LinearLayout>
 
     <com.ekalips.fancybuttonproj.FancyButton
